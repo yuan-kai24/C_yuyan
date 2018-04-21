@@ -5,22 +5,22 @@ extern int X,Y;
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	int dz = 0;//¹â±êÎ»ÖÃÓëÊäÈëÎ»Êı
-	char key;//ÊäÈë×Ö·ûµÄÁÙÊ±´¢´æ 
-	SetConsoleTitle("¼òÒ×¼ÆËãÆ÷1.0.-1¡ª²âÊÔ°æ");//¿ØÖÆÌ¨±êÌâ 
-	MapInit();//µØÍ¼³õÊ¼»¯ 
+	int dz = 0;//å…‰æ ‡ä½ç½®ä¸è¾“å…¥ä½æ•°
+	char key;//è¾“å…¥å­—ç¬¦çš„ä¸´æ—¶å‚¨å­˜
+	SetConsoleTitle("ç®€æ˜“è®¡ç®—å™¨1.0.-1â€”æµ‹è¯•ç‰ˆ");//æ§åˆ¶å°æ ‡é¢˜
+	MapInit();//åœ°å›¾åˆå§‹åŒ–
 	while(1)
     {
     	SetPosstions(LEF+2+dz,3);
-        key = getch();//Â¼Èë  
-        KeyPut(X,Y,key,&dz);//¼üÅÌÂ¼Èë 
-     	Inputs(X,Y,key,&dz);//»Ø³µÂ¼Èë 
-		KeyCon(key);//¼üÅÌÑ¡Ôñ¿ØÖÆ 
-        MapChoose();//µ±Ç°Ñ¡ÔñÏî´òÓ¡£¨Ä¬ÈÏ×ø±ê(0,4)£© 	
+        key = getch();//å½•å…¥
+        KeyPut(X,Y,key,&dz);//é”®ç›˜å½•å…¥
+     	Inputs(X,Y,key,&dz);//å›è½¦å½•å…¥
+		KeyCon(key);//é”®ç›˜é€‰æ‹©æ§åˆ¶
+        MapChoose();//å½“å‰é€‰æ‹©é¡¹æ‰“å°ï¼ˆé»˜è®¤åæ ‡(0,4)ï¼‰
     }
 	return 0;
 }
 
 /*
-*»¹ÊÇmainº¯Êı¿´×ÅË³ÑÛ 
-*/ 
+*è¿˜æ˜¯mainå‡½æ•°çœ‹ç€é¡ºçœ¼
+*/
